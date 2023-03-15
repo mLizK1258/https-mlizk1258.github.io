@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evergreen - Aloe Vera</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/flexbox.css" rel="stylesheet" />
+    <!-- Font css file generated using Adobe Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="image-wrapper">
+        <a href="home.html">
+          <img src="img/evergreen.png" alt="evergreen_logo" class="top-logo" />
+        </a>
+      </div>
+    </header>
+
+    <section class="nav-bar">
+      <nav class="main-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="index.html">Style Guide</a>
+        <a class="link-nav flex-nav-item" href="home.html">Home</a>
+        <a class="link-nav flex-nav-item" href="products.html">Products</a>
+        <a class="link-nav flex-nav-item" href="contact.html">Contact</a>
+        <a class="link-nav flex-nav-item" href="about.html">About</a>
+      </nav>
+    </section>
+
+    <main id="details">
+      <section id="Aloe_vera" class="image-wide image-wrapper">
+        <img src="img/aloe_vera.jpg" alt="Aloe Vera" />
+        <a class="button-large" href="checkout1.html">ADD TO CART</a>
+        <section id="event-info" class="info-block">
+          <h2>ALOE VERA</h2>
+          <h3>$19.99</h3>
+        </section>
+      </section>
+      <section id="description">
+        <h1>Description</h1>
+        <p>
+          Aloe vera is a succulent plant species of the genus Aloe. The plant is
+          stemless or very short-stemmed with thick, greenish, fleshy leaves
+          that fan out from the plant’s central stem. The margin of the leaf is
+          serrated with small teeth.Aloe vera is a succulent plant species of
+          the genus Aloe. Aloe is a cactus-like plant that grows in hot, dry
+          climates. It is cultivated in subtropical regions around the world,
+          including the southern border areas of Texas, New Mexico, Arizona, and
+          California. Historically, aloe has been used for skin conditions and
+          was thought to improve baldness and promote wound healing. Aloe is
+          used topically (applied to the skin) and orally. Topical use of aloe
+          is promoted for acne, lichen planus (a very itchy rash on the skin or
+          in the mouth), oral submucous fibrosis, burning mouth syndrome, burns,
+          and radiation-induced skin toxicity. Oral use of aloe is promoted for
+          weight loss, diabetes, hepatitis, and inflammatory bowel disease (a
+          group of conditions caused by gut inflammation that includes Crohn’s
+          disease and ulcerative colitis). In 2002, the U.S. Food and Drug
+          Administration issued a ruling that required manufacturers to remove
+          aloe from over-the-counter laxative products because of a lack of
+          safety data.
+        </p>
+      </section>
+      <section id="reviews">
+        <h1>Reviews</h1>
+        <section class="review">
+          <h4>Bruce | 2023-02-01</h4>
+          <p>
+            It’s a tiny baby plant, it will take me months to see something
+            remotely similar to the photo. So disappointed
+          </p>
+        </section>
+        <section class="review">
+          <h4>Elon | 2023-02-21</h4>
+          <p>
+            Just what I wanted! Also arrived quickly where No one else could!
+            Thank u!
+          </p>
+        </section>
+        <section id="comments">
+          <label for="comment">LEAVE YOUR COMMENT</label>
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Thank you for your valuable comment!"
+          ></textarea>
+          <!-- Refference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_button -->
+          <input type="submit" value="Submit" onclick="msg()" />
+          <!-- Refference: https://stackoverflow.com/questions/14837466/clearing-a-text-field-on-button-click -->
+          <script>
+            function msg() {
+              document.getElementById("comment").value = "";
+              alert("Thank you!");
+            }
+          </script>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <section id="links" class="image-as-link image-wrapper flex-media">
+        <a class="link-intext" href="index.html">Style Guide</a>
+        <a class="link-intext" href="https://github.com/iero525/IAT-339-P2"
+          >Git Repository</a
+        >
+        <a class="link-intext" href="citation.html">Citations</a>
+      </section>
+      <section id="media" class="image-as-link image-wrapper flex-media">
+        <a href="https://fontawesome.com/icons/youtube?s=&f=brands"
+          ><i class="fab fa-youtube fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://fontawesome.com/icons/instagram?s=&f=brands"
+          ><i class="fab fa-instagram fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://fontawesome.com/icons/pinterest?s=&f=brands"
+          ><i class="fab fa-pinterest fa-2x" aria-hidden="true"></i
+        ></a>
+      </section>
+      <p>
+        Copyright © 2023 Yenan Huang & Mike Chu IAT 339 D101 Spring 2023. All
+        Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

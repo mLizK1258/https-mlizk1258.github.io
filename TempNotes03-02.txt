@@ -1,0 +1,9 @@
+Notes (2023-03-02 2：27 AM)
+
+1. The new checkout needs to be updated to the style guide.
+
+2. HTML Validator shows errors in the new checkout page, line 118. (Use the validator to see the error)
+
+3. The responsiveness of the three columns on the product page is not good. (2-1 structure)
+
+4. The responsiveness problem of the checkout page. (Width problem, tested on both desktop and laptop)

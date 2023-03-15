@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evergreen - Style Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/flexbox.css" rel="stylesheet" />
+    <!-- Font css file generated using Adobe Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="image-wrapper">
+        <a href="home.html">
+          <img src="img/evergreen.png" alt="evergreen_logo" class="top-logo" />
+        </a>
+      </div>
+    </header>
+
+    <section class="nav-bar">
+      <nav class="main-nav flex-nav">
+        <a class="link-nav flex-nav-item active-nav" href="index.html"
+          >Style Guide</a
+        >
+        <a class="link-nav flex-nav-item" href="home.html">Home</a>
+        <a class="link-nav flex-nav-item" href="products.html">Products</a>
+        <a class="link-nav flex-nav-item" href="contact.html">Contact</a>
+        <a class="link-nav flex-nav-item" href="about.html">About</a>
+      </nav>
+
+      <nav class="sub-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="#interactive_elements"
+          >Interactive Elements</a
+        >
+        <a class="link-nav flex-nav-item" href="#text_elements"
+          >Text Elements</a
+        >
+        <a class="link-nav flex-nav-item" href="#combined_elements"
+          >Combined Elements</a
+        >
+        <a class="link-nav flex-nav-item" href="#branding">Branding Ideas</a>
+        <a class="link-nav flex-nav-item" href="#brand-components"
+          >Brand Components</a
+        >
+        <a class="link-nav flex-nav-item" href="#citations">Citations</a>
+      </nav>
+    </section>
+
+    <main id="style-guide">
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+        <h2>Interactive Elements</h2>
+
+        <!-- IN-TEXT LINK -->
+        <section id="intext_link" class="element">
+          <h3>In-text link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.link-intext</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;a href="#" class="link-intext"&gt;In-text link&lt;/a&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <a class="link-intext" href="#intext_link">In-text link</a>
+        </section>
+
+        <!-- NAVIGATION LINK -->
+        <section id="link_nav" class="element">
+          <h3>Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.link-nav</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;a href="#" class="link-nav"&gt;Navigation Link&lt;/a&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <a class="link-nav" href="#link_nav">Navigation Link</a>
+        </section>
+
+        <!-- SUBMIT BUTTON FOR FORM -->
+        <section id="button_submit" class="element">
+          <h3>Submit Buttons</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.button-submit</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;input type="submit" class="button-submit" value="Submit
+            Buttons"/&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <input type="submit" class="button-submit" value="Submit" />
+        </section>
+
+        <!-- RESET BUTTON FOR FORM -->
+        <section id="button_reset" class="element">
+          <h3>Reset Buttons</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.button-reset</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;input type="reset" class="button-reset" value="Reset
+            Buttons"/&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <input type="submit" class="button-reset" value="Reset" />
+        </section>
+
+        <!-- TEXT INPUT FIELD WITH LABEL -->
+        <section id="text_input_with_label" class="element">
+          <h3>Text Input Field with Label</h3>
+          <!-- Reference: https://www.w3schools.com/tags/tag_input.asp -->
+
+          <h4>CSS selector:</h4>
+          <p>
+            .label <br />
+            .input-text
+          </p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;label class="label" for="text_field"&gt;Label for Text Field:
+            &lt;/label&gt;</code
+          >
+          <code
+            >&lt;input class="input-text" id="text_field" type="text"&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <label class="label" for="text_field">Label for Text Field: </label>
+          <input class="input-text" id="text_field" type="text" />
+        </section>
+
+        <!-- RADIO BUTTON WITH LABEL -->
+        <section id="radio_button_with_label" class="element">
+          <h3>Radio Button with Label</h3>
+          <!-- Reference: https://www.w3schools.com/tags/att_input_type_radio.asp -->
+
+          <h4>CSS selector:</h4>
+          <p>
+            .label <br />
+            .radio-button
+          </p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;input type="radio" class="radio-button" id="radio-label"
+            value="LABEL"&gt;</code
+          >
+          <code
+            >&lt;label class="label"
+            for="radio-label"&gt;LABEL&lt;/label&gt;</code
+          >
+
+          <h4>Rendered element:</h4>
+          <input
+            type="radio"
+            class="radio-button"
+            id="radio-label"
+            value="LABEL"
+          />
+          <label class="label" for="radio-label">LABEL</label>
+          <br />
+          <input
+            type="radio"
+            class="radio-button"
+            id="radio-checked"
+            value="CHECKED"
+            checked
+          />
+          <label class="label" for="radio-checked">CHECKED</label>
+        </section>
+
+        <!-- IMAGE AS LINK -->
+        <section id="image_as_link" class="element">
+          <h3>Image as Link</h3>
+          <!-- Reference: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image -->
+
+          <h4>CSS selector:</h4>
+          <p>.image-as-link</p>
+          <p>.image-wrapper</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;a class="link-intext image-wrapper image-as-link"
+            href="#"&gt;</code
+          >
+          <code>&lt;img src="img/" alt="Image as Link"&gt;</code>
+          <code>&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a
+            href="details_aloe.html"
+            class="link-intext image-wrapper image-as-link"
+            ><img src="img/aloe_vera.jpg" alt="Aloe vera"
+          /></a>
+        </section>
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+
+        <!-- FOUR LEVELS OF HEADINGS -->
+        <section id="headings" class="element">
+          <h3>Headings</h3>
+
+          <h4>CSS selector:</h4>
+          <p>
+            h1 <br />
+            h2 <br />
+            h3 <br />
+            h4
+          </p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;h1&gt;H1 Heading&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;H2 Heading&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;H3 Heading&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;H4 Heading&lt;/h4&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <h1>H1 Heading</h1>
+          <h2>H2 Heading</h2>
+          <h3>H3 Heading</h3>
+          <h4>H4 Heading</h4>
+        </section>
+
+        <!-- PARAGRAPH -->
+        <section id="paragraph" class="element">
+          <h3>Paragraphs</h3>
+
+          <h4>CSS selector:</h4>
+          <p>p</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p&gt;Content&lt;/p&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <p>
+            The boy walked down the street in a carefree way, playing without
+            notice of what was about him. He didn't hear the sound of the car as
+            his ball careened into the road. He took a step toward it, and in
+            doing so sealed his fate. She looked at her student wondering if she
+            could ever get through. "You need to learn to think for yourself,"
+            she wanted to tell him. "Your friends are holding you back and
+            bringing you down." But she didn't because she knew his friends were
+            all that he had and even if that meant a life of misery, he would
+            never give them up.
+          </p>
+        </section>
+
+        <section id="number_list" class="element">
+          <h3>Numbered Lists</h3>
+
+          <h4>CSS selector:</h4>
+          <p>
+            ol <br />
+            li
+          </p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;ol&gt;</code>
+          <code>&lt;li&gt;Content&lt;/li&gt;</code>
+          <code>&lt;/ol&gt;</code>
+
+          <ol>
+            <li>Sample1</li>
+            <li>Sample2</li>
+            <li>Sample3</li>
+          </ol>
+        </section>
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+        <h2>Combined Elements</h2>
+
+        <!-- MAIN NAVIGATION -->
+        <section id="main_nav" class="element">
+          <h3>Main Navigation</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.main-nav</p>
+          <p>.flex-nav</p>
+          <p>.flex-nav-item</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;nav class="main-nav flex-nav"&gt;</code>
+          <code
+            >&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title1&lt;/a&gt;</code
+          >
+          <code
+            >&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title2&lt;/a&gt;</code
+          >
+          <code
+            >&lt;a class="link-nav flex-nav-item"
+            href="#"&gt;Title3&lt;/a&gt;</code
+          >
+          <code>&lt;/nav&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <nav class="main-nav flex-nav">
+            <a class="link-nav flex-nav-item" href="#main_nav">Homepage</a>
+            <a class="link-nav flex-nav-item" href="#main_nav">Cart</a>
+            <a class="link-nav flex-nav-item" href="#main_nav">Account</a>
+          </nav>
+        </section>
+
+        <!-- PRODUCT/SERVICE LISTING -->
+        <section id="product/service_listing" class="element">
+          <h3>Product/Service Listing</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.listing</p>
+          <p>.product-info</p>
+          <p>.product-image</p>
+          <p>.flex-listing</p>
+          <p>.flex-listing-image</p>
+          <p>.flex-listing-item</p>
+
+          <h4>Sample code:</h4>
+          <code
+            >&lt;article id="product#" class="listing flex-listing"&gt;</code
+          >
+          <code>&lt;section class="product-image flex-listing-item"&gt;</code>
+          <code>&lt;a class="link-intext image-as-link" href="#"&gt;</code>
+          <code>&lt;img src="img/" alt="Image as Link"&gt;</code>
+          <code>&lt;/a&gt;</code>
+          <code>&lt;/section&gt;</code>
+          <code>&lt;section class="product-info flex-listing-item"&gt;</code>
+          <code>&lt;h3&gt;Product Name&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;Price&lt;/h4&gt;</code>
+          <code>&lt;p&gt;Short Description&lt;/p&gt;</code>
+          <code
+            >&lt;a href="#" class="link-intext"&gt;Details Link&lt;/a&gt;</code
+          >
+          <code>&lt;/section&gt;</code>
+          <code>&lt;/article&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <article id="Aloe_vera" class="listing flex-listing">
+            <section class="product-image flex-listing-image">
+              <a
+                href="details_aloe.html"
+                class="link-intext image-wrapper image-as-link"
+                ><img src="img/aloe_vera.jpg" alt="Aloe vera"
+              /></a>
+            </section>
+
+            <section class="product-info flex-listing-item">
+              <h3>Aloe Vera</h3>
+              <h4>Price: $16.99</h4>
+              <p>
+                Aloe vera is a succulent plant species of the genus Aloe. The
+                plant is stemless or very short-stemmed with thick, greenish,
+                fleshy leaves that fan out from the plant’s central stem. The
+                margin of the leaf is serrated with small teeth.
+              </p>
+              <a class="link-intext" href="details_aloe.html">Details...</a>
+            </section>
+          </article>
+        </section>
+
+        <!-- PAYMENT FORM -->
+        <section id="payment_form" class="element">
+          <h3>Payment Form</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.new-checkout-row</p>
+          <p>.new-checkout-container</p>
+
+          <h4>Sample code:</h4>
+
+          <code>&lt;div class="new-checkout-row"&gt;</code>
+          <code>&lt;div class="new-checkout-col-25"&gt;</code>
+          <code>&lt;div class="new-checkout-container""&gt;</code>
+          <code>&lt;h3&gt;SHOPPING CART&lt;/h3&gt;</code>
+          <code>&lt;label for="fname""&gt;Accepted Cards:&lt;/label&gt;</code>
+          <code>&lt;div class="icon-container"&gt;</code>
+          <code
+            >&lt;i class="fab fa-cc-visa fa-2x" style="color: navy"&gt;</code
+          >
+          <code
+            >&lt;input class="input-text" id="text_field" type="text"&gt;</code
+          >
+          <code>&lt;a href="products.html" class="button-reset"&gt;</code>
+          <code>&lt;a href="thankyou.html" class="button-submit"&gt;</code>
+          <code>&lt;/form&gt;</code>
+          <code>&lt;/div&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <div class="new-checkout-container">
+            <form action="/action_page.php">
+              <div class="new-checkout-row">
+                <div class="new-checkout-col-50">
+                  <h3>SHOPPING CART</h3>
+                  <img
+                    src="img/evergreen.png"
+                    style="width: 60%"
+                    alt="evergreen_logo"
+                  />
+                  <label>Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fab fa-cc-visa fa-2x" style="color: navy"></i>
+                    <i class="fab fa-cc-amex fa-2x" style="color: blue"></i>
+                    <i
+                      class="fab fa-cc-mastercard fa-2x"
+                      style="color: red"
+                    ></i>
+                    <i
+                      class="fab fa-cc-discover fa-2x"
+                      style="color: orange"
+                    ></i>
+                  </div>
+                  <label for="cname"
+                    ><i class="fa fa-user"></i>Name on Card</label
+                  >
+                  <input
+                    type="text"
+                    id="cname"
+                    name="cardname"
+                    placeholder="John More Doe"
+                  />
+
+                  <label for="email"
+                    ><i class="fa fa-envelope"></i> Email</label
+                  >
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="john@example.com"
+                  />
+                  <label for="adr"
+                    ><i class="fa fa-address-card-o"></i> Billing Address</label
+                  >
+                  <input
+                    type="text"
+                    id="adr"
+                    name="address"
+                    placeholder="542 W. 15th Street"
+                  />
+                  <label for="ccnum">Credit card number</label>
+                  <input
+                    type="text"
+                    id="ccnum"
+                    name="cardnumber"
+                    placeholder="111-222-3333"
+                  />
+
+                  <label for="year">Select a year:</label>
+                  <select id="year" name="year">
+                    <!-- Loop through the years from 1990 to 2330 using JavaScript -->
+                    <script>
+                      for (var year = 1980; year <= 2050; year++) {
+                        var option = document.createElement("option");
+                        option.value = year;
+                        option.text = year;
+                        document.getElementById("year").appendChild(option);
+                      }
+                    </script>
+                  </select>
+
+                  <label for="month">Select a month:</label>
+                  <select id="month" name="month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                  <!--<div class="new-checkout-row">-->
+
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352" />
+
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr" />
+                    Shipping address same as billing
+                  </label>
+                  <div class="new-checkout-row">
+                    <div class="new-checkout-col-50">
+                      <a class="button-reset" href="products.html"
+                        >Continue shopping?</a
+                      >
+                    </div>
+                    <div class="new-checkout-col-50">
+                      <a class="button-submit" href="thankyou.html"
+                        >Continue to checkout</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- CHECKOUT CART -->
+        <section class="element">
+          <h3>Checkout Cart</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.cart</p>
+          <p>.cart-details</p>
+          <p>.cart-row</p>
+          <p>.cart-total</p>
+          <p>.flex-cart-details</p>
+          <p>.flex-cart-row</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;article id="checkout_cart" class="cart"&gt;</code>
+          <code>&lt;section class="cart-details flex-cart-details"&gt;</code>
+
+          <code>&lt;table&gt;</code>
+          <code>&lt;tr&gt;</code>
+          <code>&lt;th&gt;Products&lt;/th&gt;</code>
+          <code>&lt;th&gt;Price&lt;/th&gt;</code
+          ><code>&lt;th&gt;Amount&lt;/th&gt;</code>
+          <code>&lt;th&gt;Total&lt;/th&gt;</code>
+          <code>&lt;/tr&gt;</code>
+
+          <code>&lt;tr&gt;</code>
+          <code>
+            &lt;td&gt; &lt;a href="" class="link-intext image-wrapper"&gt;
+            &lt;imgclass="image-as-link" src="" alt=""&gt; &lt;/a&gt;&lt;br
+            /&gt;Fasciated Haworthia&lt;/td&gt;
+          </code>
+          <code>&lt;td&gt;$19.99/each&lt;/td&gt;</code
+          ><code>&lt;td&gt;1&lt;/td&gt;</code>
+          <code>&lt;td&gt;$19.99&lt;/td&gt;</code>
+          <code>&lt;/tr&gt;</code>
+
+          <code>&lt;tr&gt;</code>
+          <code>&lt;th&gt;&lt;/th&gt;</code>
+          <code>&lt;th&gt;&lt;/th&gt;</code
+          ><code>&lt;th&gt;Total&lt;/th&gt;</code>
+          <code>&lt;th&gt;$19.99&lt;/th&gt;</code>
+          <code>&lt;/tr&gt;</code>
+          <code>&lt;/table&gt;</code>
+          <code>&lt;/section&gt;</code>
+          <code>&lt;/article&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <div class="new-checkout-col-50">
+            <article id="checkout_cart" class="cart">
+              <section class="cart-details flex-cart-details">
+                <table>
+                  <tr>
+                    <th>Products</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="details_aloe.html"
+                        class="link-intext image-wrapper image-as-link"
+                        ><img src="img/aloe_vera.jpg" alt="Aloe vera"
+                      /></a>
+                      <br />
+                      Aloe Vera
+                    </td>
+                    <td>$19.99</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a
+                        href="details_dracaena.html"
+                        class="link-intext image-wrapper image-as-link"
+                        ><img
+                          src="img/aglaonema_kiwi.jpg"
+                          alt="Two hands holding a Aglaonema Kiwi"
+                      /></a>
+                      <br />
+                      AGLAONEMA KIWI
+                    </td>
+                    <td>$34.49</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th>Total</th>
+                    <th></th>
+                    <th>$54.48</th>
+                  </tr>
+                </table>
+              </section>
+            </article>
+          </div>
+        </section>
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+      <!-- BRANDING IDEAS -->
+      <section id="branding">
+        <h2>Branding Ideas</h2>
+
+        <section class="element">
+          <h3>Company Overview</h3>
+          <p>
+            "Evergreen" is an online company that mainly sells plants such as
+            succulents and bonsai. It provides knowledge and tips on plant care
+            and holds regular online sharing sessions on plant care tips. The
+            company's goal is to build a plant-centered community and attract
+            more young people to have plant companions.
+          </p>
+        </section>
+
+        <section class="element">
+          <h3>Potential Customers</h3>
+          <p>
+            Potential customers will be young people who want to add small
+            plants in the room but do not have the corresponding knowledge and
+            experience.
+          </p>
+          <p><strong>Quick Personas</strong></p>
+          <p><strong>Bruce</strong>(22, Male, Student)</p>
+          <p>
+            <strong>About</strong> <br />
+            - Bruce is a third-year student who is busy studying all day. <br />
+            - He lives alone in an apartment with a cat for company. <br />
+            - He is very experienced in taking care of pets but not plants.<br />
+          </p>
+          <p>
+            <strong>Goals</strong> <br />
+            - Bruce wanted to make the apartment more cozy.<br />
+            - He hopes to learn about caring for plants and try his hand at
+            growing them. <br />
+          </p>
+          <p>
+            <strong>Pain Points</strong> <br />
+            - Bruce can't find a suitable place to buy succulents because the
+            local plant stores are far away from him.<br />
+            - He fails to find a way to systematically learn to care for plants.
+            <br />
+            - He doesn't find the right community to exchange ideas about caring
+            for plants. <br />
+          </p>
+        </section>
+
+        <section class="element">
+          <h3>Competitiveness</h3>
+          <p>
+            Compared with other websites that sell plants online, "Evergreen"
+            not only provides the option to buy plants, but also provides
+            customers with sufficient knowledge and skills on caring for plants.
+            <br />
+            "Evergreen" pays more attention to the whole process of customers
+            from purchasing plants to taking care of plants than other
+            companies. It is better than any other company at keeping in touch
+            with customers after their purchases are over.
+          </p>
+        </section>
+      </section>
+
+      <!-- BRAND COMPONENTS -->
+      <section id="brand-components">
+        <h2>Brand Components</h2>
+
+        <section id="fonts" class="element">
+          <h3>Fonts: Montserrat</h3>
+          <h4>Samples:</h4>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <p>Paragraph</p>
+          <p>
+            Designed by
+            <a
+              class="link-intext"
+              href="https://fonts.google.com/?query=Julieta+Ulanovsky"
+              >Ulanovsky et al.</a
+            >
+            From
+            <a class="link-intext" href="https://fonts.google.com/"
+              >Google Fonts</a
+            >
+            <br />
+            Access and use via
+            <a
+              class="link-intext"
+              href="https://fonts.google.com/specimen/Montserrat"
+              >Montserrat Fonts</a
+            >
+          </p>
+        </section>
+
+        <section id="colour_palettes" class="element">
+          <h3>Colour Palettes</h3>
+          <div class="bgp"></div>
+          Primary: #0a6d36 <br />
+          <div class="bgpc"></div>
+          Primary-container: #9ef6b0 <br />
+          <div class="bgpco"></div>
+          On-primary-container: #00210b <br />
+
+          <div class="bgs"></div>
+          Secondary: #506352 <br />
+          <div class="bgsc"></div>
+          Secondary-container: #d3e8d2 <br />
+          <div class="bgsco"></div>
+          On-secondary-container: #0e1f12 <br />
+
+          <div class="bgt"></div>
+          Tertiary: #3a656e <br />
+          <div class="bgto"></div>
+          On-tertiary: #ffffff <br />
+          <div class="bgtc"></div>
+          Tertiary-container: #bdeaf5 <br />
+          <div class="bgtco"></div>
+          On-tertiary-container: #001f25 <br />
+
+          <div class="bge"></div>
+          Error: #ba1a1a <br />
+          <div class="bgec"></div>
+          Error-container: #ffdad6 <br />
+          <div class="bgeco"></div>
+          On-error-container: #410002 <br />
+
+          <div class="bg"></div>
+          Background: #fcfdf7 <br />
+          <div class="bgo"></div>
+          On-background: #191c19 <br />
+
+          <div class="bgsur"></div>
+          Surface-variant: #dde5da <br />
+          <div class="bgsuro"></div>
+          On-surface-variant: #414941 <br />
+          <div class="bgout"></div>
+          Outline: #717970 <br />
+          <p>
+            Tools used:
+            <a
+              class="link-intext"
+              href="https://color.adobe.com/zh/create/color-wheel"
+              >Adobe Color Wheel</a
+            >
+            ,
+            <a
+              class="link-intext"
+              href="https://m3.material.io/theme-builder#/custom"
+              >Material Theme Builder</a
+            >
+          </p>
+        </section>
+
+        <section id="art_direction" class="element">
+          <h3>Potential imagery / Art Direction</h3>
+
+          <p>
+            The main art direction is to use flat illustrations for icons and
+            minimalist plant photos for product images. (The following pictures
+            are just samples and will not be used in the actual website)
+          </p>
+
+          <a
+            href="https://stock.adobe.com/ca/images/tree-painting-set-indoor-and-outdoor-landscape-garden-potted-plants-isolated-on-white-vector-set-green-plant-in-the-pot/366068726?prev_url=detail"
+            class="link-intext image-as-link image-wrapper"
+            ><img src="img/flat.jpg" alt="Plant Flat Illustrations"
+          /></a>
+
+          <a
+            href="https://unsplash.com/photos/T0inbt7nRME"
+            class="link-intext image-as-link image-wrapper"
+            ><img src="img/aloe_vera.jpg" alt="Aloe vera"
+          /></a>
+        </section>
+      </section>
+
+      <section id="citations">
+        <h2>Citations</h2>
+        <a class="link-intext" href="citation.html">Check Citation Page</a>
+      </section>
+    </main>
+
+    <footer>
+      <section id="links" class="image-as-link image-wrapper flex-media">
+        <a class="link-intext" href="index.html">Style Guide</a>
+        <a class="link-intext" href="https://github.com/iero525/IAT-339-P2"
+          >Git Repository</a
+        >
+        <a class="link-intext" href="citation.html">Citations</a>
+      </section>
+      <section id="media" class="image-as-link image-wrapper flex-media">
+        <a href="https://fontawesome.com/icons/youtube?s=&f=brands"
+          ><i class="fab fa-youtube fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://fontawesome.com/icons/instagram?s=&f=brands"
+          ><i class="fab fa-instagram fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://fontawesome.com/icons/pinterest?s=&f=brands"
+          ><i class="fab fa-pinterest fa-2x" aria-hidden="true"></i
+        ></a>
+      </section>
+      <p>
+        Copyright © 2023 Yenan Huang & Mike Chu IAT 339 D101 Spring 2023. All
+        Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

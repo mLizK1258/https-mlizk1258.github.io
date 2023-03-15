@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evergreen - Contact Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize.css file downloaded from https://necolas.github.io/normalize.css/ -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/flexbox.css" rel="stylesheet" />
+    <!-- Font css file generated using Adobe Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/vkt6nof.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="image-wrapper">
+        <a href="home.html">
+          <img src="img/evergreen.png" alt="evergreen_logo" class="top-logo" />
+        </a>
+      </div>
+    </header>
+
+    <section class="nav-bar">
+      <nav class="main-nav flex-nav">
+        <a class="link-nav flex-nav-item" href="index.html">Style Guide</a>
+        <a class="link-nav flex-nav-item" href="home.html">Home</a>
+        <a class="link-nav flex-nav-item" href="products.html">Products</a>
+        <a class="link-nav flex-nav-item active-nav" href="contact.html"
+          >Contact</a
+        >
+        <a class="link-nav flex-nav-item" href="about.html">About</a>
+      </nav>
+    </section>
+
+    <div class="contact-container">
+      <div class="contact-row">
+        <div class="contact-column">
+          <h2>Contact Us</h2>
+          <img
+            src="img/evergreen.png"
+            style="width: 60%"
+            alt="evergreen_logo"
+          />
+          <p>
+            Got questions? We’ve got answers. We appreciate hearing from our
+            fellow plant parents, so drop us a line if you have questions,
+            comments, or just feel like sending along your latest update about
+            your EVERGREEN plants!
+          </p>
+        </div>
+
+        <div class="contact-column">
+          <form>
+            <h2>Your Information</h2>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Canada</option>
+              <option value="canada">USA</option>
+              <option value="usa">Australia</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <input type="submit" class="button-submit" value="Submit" />
+          </form>
+        </div>
+
+        <div class="contact-column">
+          <h2>Business Hour</h2>
+          <p>
+            Monday to Friday - 09:00 - 21:00<br />
+            Saturday - 10:00 - 17:00<br />
+            Sunday - 10:00 - 13:00<br />
+            <br />
+
+            Pacific Standard Time
+          </p>
+
+          <h2>Head Office</h2>
+          <p>Canada Head Office: 123 Abc Street, 1A2 V26,BC, CA</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <section id="links" class="image-as-link image-wrapper flex-media">
+        <a class="link-intext" href="index.html">Style Guide</a>
+        <a class="link-intext" href="https://github.com/iero525/IAT-339-P2"
+          >Git Repository</a
+        >
+        <a class="link-intext" href="citation.html">Citations</a>
+      </section>
+      <section id="media" class="image-as-link image-wrapper flex-media">
+        <a href="https://fontawesome.com/icons/youtube?s=&f=brands"
+          ><i class="fab fa-youtube fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://fontawesome.com/icons/instagram?s=&f=brands"
+          ><i class="fab fa-instagram fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://fontawesome.com/icons/pinterest?s=&f=brands"
+          ><i class="fab fa-pinterest fa-2x" aria-hidden="true"></i
+        ></a>
+      </section>
+      <p>
+        Copyright © 2023 Yenan Huang & Mike Chu IAT 339 D101 Spring 2023. All
+        Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
