@@ -1,1 +1,1 @@
-https://mlizk1258.github.io/
+mlizk1258.github.io
